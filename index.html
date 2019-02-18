@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 	<head>
 		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no"/>
 		<title>Rdio - Luke Chesser</title>
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 		<link rel="stylesheet" href="css/reset.css"/>
@@ -16,14 +17,44 @@
 					<img class="pull-left" src="img/logo.png" />
 				</div>
 
-				<form method="POST" action="index.html">
+				<form method="POST" action="index.html" class="d-none d-sm-block">
 					<input type="search" required class="search">
 					<input type="submit" name="submit" value="Rechercher" class="submit">
 				</form>
+				<br>
 				<div class="user">
-				    <a href="#">Luke Chesser</a>
+						<a href="#">Luke Chesser</a>
 				</div>
+
+				<br>
+				<br>
+
+				<div class="dropdown d-block d-sm-none">
+					<b>
+					<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					  Menu
+					</button>
+					<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+					  <a class="dropdown-item" href="http://www.deezer.com/">Deezer</a>
+					  <a class="dropdown-item" href="https://soundcloud.com/stream">Soundcloud</a>
+					  <a class="dropdown-item" href="https://www.youtube.com/?hl=fr&gl=FR">Youtube</a>
+					  <a class="dropdown-item" href="#">Heavy Rotation</a>
+					  <a class="dropdown-item" href="#">Recent Activity</a>
+					  <a class="dropdown-item" href="#">Top Charts</a>
+					  <a class="dropdown-item" href="#">New Releases</a>
+					</div>
+					</b>
+				  </div>
 			</div>
+			<div class="d-block d-sm-none">
+				<h3>Your music</h3>
+				<nav class="music">
+					<ul class="main d-md-inline">
+						<li><a class="collection" href="#">Collection</a></li>
+						<li><a class="history" href="#">History</a></li>
+					</ul>
+				</nav>
+				</div>
 		</header>
 		<div class="container row">
 		<aside class="col-2 d-none d-sm-block">
@@ -34,15 +65,20 @@
 					<li><a class="recent" href="#">Recent Activity</a></li>
 					<li><a class="top" href="#">Top Charts</a></li>
 					<li><a class="new" href="#">New Releases</a></li>
+					<li><a class="link" href="http://www.deezer.com/">Deezer</a></li>
+				    <li><a class="link" href="https://soundcloud.com/stream">Soundcloud</a></li>
+					<li><a class="link" href="https://www.youtube.com/?hl=fr&gl=FR">Youtube</a></li>
 				</ul>
 			</nav>
+			<div class="d-none d-sm-block">
 			<h3>Your music</h3>
 			<nav class="music">
-				<ul class="main">
+				<ul class="main d-md-inline">
 					<li><a class="collection" href="#">Collection</a></li>
 					<li><a class="history" href="#">History</a></li>
 				</ul>
 			</nav>
+			</div>
 		</aside>
 
 		<main class="col-10">
